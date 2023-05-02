@@ -1,0 +1,33 @@
+@use 'reset';
+@use 'variaveis';
+@use 'header';
+@use 'descricao_filme';
+
+body {
+    background-image: url('../images/avatar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100vw;
+}
+
+.texto--medio {
+    font-size: 14px;
+    font-weight: bold;
+    color: variaveis.$corTexto_secundario;
+}
+
+.texto--pequeno {
+    color: variaveis.$corTexto_principal;
+}
+
+.texto--descritivo--pequeno {
+    font-size: 12px;
+    color: variaveis.$corTexto_principal;
+}
+
+.texto--descritivo--medio {
+    color: variaveis.$corTexto_secundario;
+}

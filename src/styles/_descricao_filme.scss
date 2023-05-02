@@ -1,0 +1,172 @@
+@use 'variaveis';
+
+@font-face {
+    font-family: Avenir;
+    src: url('../assets/fonts/Avenir-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url('../assets/fonts/Avenir-Regular.woff2');
+    font-weight: 700;
+}
+
+.title_descricao {
+    width: 341px;
+}
+
+.description_video {
+    height: 100%;
+}
+
+.categoria-filme {
+    margin-top: 2px;
+}
+
+.image-description {
+    width: 100%;
+}
+
+.image-play-btn {
+    width: 18px;
+    height: 18px;
+}
+
+.btn-user {
+    width: 23px;
+}
+
+.btn-add-plus {
+    width: 16px;
+}
+
+.descricao__filme {
+    width: 100vw;        
+
+    .item__titulo {
+        width: 100%;
+        padding: 52px 90px 16px 90px;
+    }
+
+    .item_detalhes {
+        width: 100%;
+        padding: 0 90px 0 90px;
+
+        ul {
+            display: flex;
+
+            .box_faixa {
+                width: 20px;
+                margin-right: 4px;
+            }
+
+            .box_tipoVideo {
+                width: 38px;
+                margin-right: 4px;
+            }
+
+            .box_tipo_transmissao {
+                width: 28px;
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+.btn-controle {
+    width: 874px;
+    display: flex;
+    align-items: center;
+
+    margin-top: 32px;
+    
+    .btn-assistir {
+        width: 166px;
+        height: 56px;
+        font-size: 15px;
+        padding: 0 24px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin: 4px 12px 4px 0;
+        background-color: variaveis.$corTexto_secundario;
+
+        border: 2px solid variaveis.$corTexto_secundario;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        justify-content: space-around;
+
+        &:hover {
+            background-color: variaveis.$corTexto_principal;
+            border: 2px solid variaveis.$corTexto_principal;
+        }
+    }
+
+    .btn-trailer {
+        width: 120px;
+        height: 56px;
+        font-size: 15px;
+        margin: 4px 12px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: variaveis.$corTexto_secundario;
+        background-color: variaveis.$corDeFundoHeader;
+
+        border: 2px solid variaveis.$corTexto_secundario;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            color: variaveis.$corDeFundoHeader;
+            background-color: variaveis.$corTexto_secundario;
+            border: 2px solid variaveis.$corTexto_secundario;
+        }
+    }
+
+    .btn-adicionar,
+    .btn-usuario {
+        width: 40px;
+        height: 40px;
+        margin: 0 12px;
+        background-color: variaveis.$corDeFundoHeader;
+
+        border: 2px solid variaveis.$corTexto_secundario;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.sinopse {
+    width: 874px;
+    padding: 16px 0;
+
+    p {
+        font-family: Avenir, sans-serif;
+        font-size: 18px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        line-height: 28px;
+    }
+}
