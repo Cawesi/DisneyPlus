@@ -1,0 +1,26 @@
+@use 'variaveis';
+
+.shows {
+
+    &__box {
+        width: 100%;
+        padding: 0 90px;
+
+        &__list {
+            display: flex;
+            border-bottom: 1px solid variaveis.$corhbaropacity;
+
+            li {
+                font-size: 20px;
+                margin: 0 40px 0 0;
+                padding: 0 0 15px 0;
+                letter-spacing: 1px;
+                border-bottom: 3px solid transparent;
+
+                &:hover {
+                    border-bottom: 3px solid variaveis.$corTexto_secundario;
+                }
+            }
+        }
+    }
+}

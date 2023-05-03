@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: Avenir;
-    src: url('../assets/fonts/Avenir-Regular.woff2');
+    src: url('../assets/fonts/Avenir-Bold.woff2');
     font-weight: 700;
 }
 
@@ -107,6 +107,7 @@
         &:hover {
             background-color: variaveis.$corTexto_principal;
             border: 2px solid variaveis.$corTexto_principal;
+            cursor: pointer;
         }
     }
 
@@ -136,6 +137,7 @@
             color: variaveis.$corDeFundoHeader;
             background-color: variaveis.$corTexto_secundario;
             border: 2px solid variaveis.$corTexto_secundario;
+            cursor: pointer;
         }
     }
 
@@ -156,6 +158,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -165,7 +171,7 @@
 
     p {
         font-family: Avenir, sans-serif;
-        font-size: 18px;
+        font-size: 17px;
         letter-spacing: 1px;
         word-spacing: 2px;
         line-height: 28px;
