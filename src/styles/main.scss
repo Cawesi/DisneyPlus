@@ -4,14 +4,17 @@
 @use 'descricao_filme';
 @use 'shows';
 
-body {
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+
     background-image: url('../images/avatar.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.container {
-    width: 100vw;
+.pd-main {
+    padding: 0 calc(3.5vw + 24px)
 }
 
 .texto--medio {
