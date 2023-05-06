@@ -4,17 +4,24 @@
 @use 'descricao_filme';
 @use 'shows';
 
-.container {
-    min-width: 100vw;
-    min-height: 100vh;
-
+body {
     background-image: url('../../dist/images/avatar.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
 }
 
+.container {
+    width: 100vw;
+    min-height: 100vh;
+}
+
 .pd-main {
-    padding: 0 calc(3.5vw + 24px)
+    width: 100%;
+    padding: 0 calc(3.5vw + 24px);
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .texto--medio {
@@ -35,4 +42,21 @@
 .texto--descritivo--medio {
     font-weight: bold;
     color: variaveis.$corTexto_secundario;
+}
+
+.texto--extras--titulo {
+    font-size: 15px;
+    font-weight: bolder;
+    color: variaveis.$corTexto_secundario;
+}
+
+.texto--extras--titulo--duracao {
+    font-size: 13px;
+    color: variaveis.$corTexto_principal
+}
+
+.texto--extras--descricao {
+    font-size: 12px;
+    line-height: 1.8em;
+    color: variaveis.$corTexto_principal
 }

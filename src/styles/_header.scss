@@ -1,10 +1,7 @@
 @use 'variaveis';
 
 .header {
-    width: 100%;
-    padding: 0 16px;
     background-color: variaveis.$corheaderopacity1;
-
     position: sticky;
 
     &__nav {
@@ -64,6 +61,7 @@
 
     .header__nav__perfil {
         height: 100%;
+        padding-right: 16px;
         display: flex;
         column-gap: 12px;
         align-items: center;
