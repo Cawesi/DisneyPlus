@@ -3,6 +3,7 @@
 @use 'header';
 @use 'descricao_filme';
 @use 'shows';
+@use 'footer';
 
 body {
     background-image: url('../../dist/images/avatar.jpg');
@@ -10,6 +11,8 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+
+    overflow-x: hidden;
 }
 
 .container {
@@ -52,11 +55,40 @@ body {
 
 .texto--extras--titulo--duracao {
     font-size: 13px;
-    color: variaveis.$corTexto_principal
+    color: variaveis.$corTexto_principal;
 }
 
 .texto--extras--descricao {
     font-size: 12px;
     line-height: 1.8em;
-    color: variaveis.$corTexto_principal
+    color: variaveis.$corTexto_principal;
+}
+
+.texto--detalhes--titulo {
+    font-size: 22px;
+    color: variaveis.$corTexto_secundario;
+}
+
+.texto--detalhes--descricao {
+    font-size: 18px;
+    line-height: 1.7em;
+    letter-spacing: 1.6px;
+    color: variaveis.$corTexto_principal;
+}
+
+.texto--detalhes--detalhes--titulo {
+    font-size: 15px;
+    line-height: 1em;
+    color: variaveis.$corTexto_principal;
+}
+
+.texto--detalhes--detalhes--assunto {
+    font-size: 15px;
+    line-height: 1em;
+    color: variaveis.$corTexto_secundario;
+}
+
+.texto--footer {
+    font-size: 12px;
+    color: variaveis.$corTexto_principal;
 }

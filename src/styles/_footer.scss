@@ -1,0 +1,54 @@
+@use 'variaveis';
+
+.logo--footer {
+    width:94px;
+    height: 48px;
+    margin-top: 20px;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    background-color: variaveis.$corDeFundoHeader;
+
+    &__logo {
+        text-align: center;
+    }
+
+    &__contato {
+
+        & > ul {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+
+            & > li {
+                margin: 10px 1px;
+                padding: 1px 6px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__servicos {
+        display: flex;
+        justify-content: center;
+        
+        & > p {
+            width: 440px;
+            margin-top: 8px;
+            line-height: 1.6em;
+            text-align: center;
+        }
+    }
+
+    &__direitos {
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+    }
+} 

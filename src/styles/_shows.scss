@@ -6,6 +6,7 @@
 
 .shows {
     display: flex;
+    padding-bottom: 112px;
     flex-direction: column;
 
     &__box {
@@ -166,9 +167,67 @@
             }
         }
     }
+
+    &__detalhes {
+        display: none;
+
+        &__titulo {
+            padding-bottom: 24px; 
+        }
+
+        &__container {
+            height: 250px;
+            display: grid;
+            grid-template-columns: 740px auto;
+
+            &__descricao {
+                width:100%;
+            }
+
+            &__detalhes {
+
+                display: grid;
+                grid-template-columns: 50% 50%;
+
+                &__esquerda {
+                    padding-left: 150px;
+                    line-height: 3em;
+
+                    & > div {
+                        padding-bottom: 8px;
+
+                        & > p {
+                            line-height: 1.6;
+                        }
+                    }
+                }
+
+                &__direita {
+                    width: 100%;
+                    padding-left: 50px;
+
+                    & > div {
+                        padding-bottom: 8px;
+
+                        & > p {
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        } 
+    }
 }
 
 
 .shows__sugestoes--is--active {
+    display: block;
+}
+
+.shows__extras--is--active {
+    display: none;
+}
+
+.shows__detalhes--is--active {
     display: none;
 }

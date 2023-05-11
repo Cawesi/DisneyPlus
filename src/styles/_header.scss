@@ -1,10 +1,13 @@
 @use 'variaveis';
 
 .header {
+    min-width: 100%;
     background-color: variaveis.$corheaderopacity1;
     position: sticky;
+    top: 0;
 
     &__nav {
+        width: 100vw;
         position: relative;
         padding: 36px 16px;
 
