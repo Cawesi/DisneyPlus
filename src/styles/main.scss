@@ -4,6 +4,7 @@
 @use 'descricao_filme';
 @use 'shows';
 @use 'footer';
+@use 'responsividade';
 
 body {
     background-image: url('../../dist/images/avatar.jpg');
@@ -35,6 +36,11 @@ body {
 
 .texto--pequeno {
     color: variaveis.$corTexto_principal;
+}
+
+.texto--pequeno--perfil {
+    color: variaveis.$corTexto_secundario;
+    font-weight: 600;
 }
 
 .texto--descritivo--pequeno {

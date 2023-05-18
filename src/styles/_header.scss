@@ -1,5 +1,9 @@
 @use 'variaveis';
 
+.menu__responsivo {
+    display: none;
+}
+
 .header {
     min-width: 100%;
     background-color: variaveis.$corheaderopacity1;
