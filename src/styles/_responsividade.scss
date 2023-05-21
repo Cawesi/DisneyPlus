@@ -1,6 +1,11 @@
-
+@use 'variaveis';
 
 @media (max-width: 1040px) {
+
+    .container {
+        margin: 0;
+        padding: 0;
+    }
 
     .header__nav__menu {
         column-gap: 0;
@@ -29,6 +34,30 @@
 
     .menu__responsivo {
         display: block;
+
+        &:hover {
+            .menuMenu {
+                display: block;
+                position: absolute;
+                top: 32px;
+            
+                background-color: variaveis.$corDeFundoHeader;
+            
+                & > .list__menuMenu {
+                    display: flex;
+                    gap: 6px;
+                    align-items: center;
+                    justify-content: flex-start;
+            
+                    padding: 8px 12px;
+            
+                    & > .imgBloco {
+                        display: inline-block;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
     }
 
     .icone__header__menu {

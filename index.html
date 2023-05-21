@@ -8,13 +8,13 @@
     <title>Avatar | Disney+</title>
 
     <link rel="stylesheet" href="./dist/style/main.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
+     
 
-    <div class="container">
-        
-        <header class="header">
+    <div class="container" id="container">
+        <header class="header" id="cabecalho">
             <nav class="header_nav">
                 <ul class="header__nav__menu">
                     <div class="header__nav__menu__item item__logo">
@@ -22,7 +22,7 @@
                             <img src="./dist/images/disneyplus.svg" alt="Logo Disney" class="logo__header logo__header__responsivo">
                         </span>
                     </div>
-
+    
                     <li class="header__nav__menu__item">
                         <a href="#">
                             <img src="./dist/images/icons/casa.png" class="icone__header" alt="Icone página inicial">
@@ -31,7 +31,7 @@
                             </span>
                         </a>
                     </li>
-
+    
                     <li class="header__nav__menu__item">
                         <a href="#">
                             <img src="./dist/images/icons/lupa.png" class="icone__header" alt="Icone pesquisa">
@@ -40,7 +40,7 @@
                             </span>
                         </a>
                     </li>
-
+    
                     <li class="header__nav__menu__item">
                         <a href="#">
                             <img src="./dist/images/icons/mais.png" class="icone__header" alt="Icone adicionar lista">
@@ -49,7 +49,7 @@
                             </span>
                         </a>
                     </li>
-
+    
                     <li class="header__nav__menu__item  titulo__menu">
                         <a href="#">
                             <img src="./dist/images/icons/grande-estrela-favorita.png" class="icone__header" alt="Icone originais Disney">
@@ -58,7 +58,7 @@
                             </span>
                         </a>
                     </li>
-
+    
                     <li class="header__nav__menu__item titulo__menu">
                         <a href="#">
                             <img src="./dist/images/icons/rolo-de-filme.png" class="icone__header" alt="Icone fimes">
@@ -67,7 +67,7 @@
                             </span>
                         </a>
                     </li>
-
+    
                     <li class="header__nav__menu__item titulo__menu">
                         <a href="#">
                             <img src="./dist/images/icons/smart-tv.png" class="icone__header" alt="Icone series">
@@ -76,41 +76,65 @@
                             </span>
                         </a>
                     </li>
-
+    
                     <li class="menu__responsivo">
+                        
                         <a href="#">
                             <img src="./dist/images/icons/menu3pontos.png" class="icone__header__menu" alt="Icone series">
                         </a>
+                        
+                        <div class="menuMenu">
+                            <div class="list__menuMenu">
+                                <div class="imgBloco">
+                                    <img src="./dist/images/icons/grande-estrela-favorita.png" class="tamImg" alt="">
+                                </div>
+                                <div class="texto--medio">
+                                    ORIGINAIS
+                                </div>
+                            </div>
+    
+                            <div class="list__menuMenu">
+                                <div class="imgBloco">
+                                    <img src="./dist/images/icons/rolo-de-filme.png" class="tamImg" alt="">
+                                </div>
+                                <div class="texto--medio">FILMES</div>
+                            </div>
+    
+                            <div class="list__menuMenu">
+                                <div class="imgBloco">
+                                    <img src="./dist/images/icons/smart-tv.png" class="tamImg" alt="">
+                                </div>
+                                <div class="texto--medio">SÉRIES</div>
+                            </div>
+                        </div>
+                    
                     </li>
                 </ul>
-
+    
                 <div class="box__header__item">
                     <ul class="header__nav__perfil">
-                        <li class="header__nav__perfil__item">
+                        <li class="header__nav__perfil__item cursor">
                             <span class="texto--pequeno--perfil titulo__menu">
                                 CaWe
                             </span>
                         </li>
-
-                        <li class="header__nav__perfil__item">
+    
+                        <li class="header__nav__perfil__item cursor">
                             <span class="box--avatar--item">
                                 <img src="./dist/images/bart.png" class="box--image--avatar" alt="Avatar Usuário">
                             </span>
                         </li>
                     </ul>
-
+    
                     <div class="container__menu__conta container__menu__conta--is-active">
                         <div class="usuarios">
-                            <div>
-                                <img src="#" alt="Avatar Usuário">
-                            </div>
-
-                            <div>
-                                <img src="#" alt="Criar Usuário">
+                            <div class="itemMenuabertura  cursor" id="usuarios__itens">
+                                <img src="./dist/images/force.png" class="box--image--avatar" alt="Avatar Usuário">
+                                <div class="texto--pequeno">Adicionar</div>
                             </div>
                         </div>
-
-                        <ul>
+    
+                        <ul class="listaOpcoesMenu">
                             <li>
                                 <a href="#">
                                     <span class="texto--pequeno">
@@ -118,15 +142,15 @@
                                     </span>
                                 </a>
                             </li>
-
+    
                             <li>
                                 <a href="#">
                                     <span class="texto--pequeno">
-                                        Configurações do aplicativo
+                                        Configurações
                                     </span>
                                 </a>
                             </li>
-
+    
                             <li>
                                 <a href="#">
                                     <span class="texto--pequeno">
@@ -134,7 +158,7 @@
                                     </span>
                                 </a>
                             </li>
-
+    
                             <li>
                                 <a href="#">
                                     <span class="texto--pequeno">
@@ -142,8 +166,8 @@
                                     </span>
                                 </a>
                             </li>
-
-                            <li>
+    
+                            <li class="ultimo_li">
                                 <a href="#">
                                     <span class="texto--pequeno">
                                         Sair
@@ -154,12 +178,12 @@
                     </div>
                 </div>
             </nav>
-        </header>   
+        </header>
 
         <div class="pd-main">
             <section class="descricao__filme">
                 <div class="descricao__filme__item__titulo item__titulo">
-                    <h1 class="descricao__filme__item__titulo__h1">
+                    <h1 class="descricao__filme__item__titulo__h1" id="pointHeader">
                         <img src="./dist/images/titulo.png" class="title_descricao" alt="Título filme">
                     </h1>
                 </div>
@@ -422,14 +446,14 @@
             <div class="footer__logo">
                 <img src="./dist/images/disneyplus.svg" alt="Disney+" class="logo--footer">
             </div>
-
+    
             <div class="footer__contato">
                 <ul>
                     <li><a href="#" class="texto--footer">Política de Privacidade</a></li>
                     <li><a href="#" class="texto--footer">Proteção de Dados no Brasil</a></li>
                     <li><a href="#" class="texto--footer">Contrato de Assinatura</a></li>
                 </ul>
-
+    
                 <ul>
                     <li><a href="#" class="texto--footer">Ajuda</a></li>
                     <li><a href="#" class="texto--footer">Dispositivos compatíveis</a></li>
@@ -437,7 +461,7 @@
                     <li><a href="#" class="texto--footer">Anúncios personalizados</a></li>
                 </ul>
             </div>
-
+    
             <div class="footer__servicos">
                 <p class="texto--footer">
                     Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. 
@@ -446,7 +470,7 @@
                     CNPJ/M 73.042.962/0004-20
                 </p>
             </div>
-
+    
             <div class="footer__direitos">
                 <p class="texto--footer">
                     © Disney. Todos os direitos reservados.
@@ -455,6 +479,10 @@
         </footer>
     </div>
 
+    
+
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./dist/js/jquery.min.js"></script>
     <script src="./src/js/main.js"></script>
     
 </body>

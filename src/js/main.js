@@ -2,6 +2,19 @@ document.addEventListener('DOMContentLoaded', function(){
     const btnsecoes = document.querySelectorAll('.btnsecoes');
     const secaoContainer = document.querySelectorAll('.btncontainersecao');
 
+    const headerItem = document.getElementById('cabecalho');
+    const alturaTitulo = headerItem.clientHeight + 30;
+
+    window.addEventListener('scroll', function(){
+        const posicaoAtual = window.scrollY;
+
+        if (posicaoAtual > alturaTitulo){
+            headerItem.style.backgroundColor = "#040714";
+        } else {
+            headerItem.style.backgroundColor = "rgba(4, 7, 20, 0.0)";
+        }
+    })
+
     for (let i = 0; i < btnsecoes.length; i++) {
         btnsecoes[i].addEventListener('click', function(botao){
             const secaoAlvo = botao.target.dataset.tabButton;
