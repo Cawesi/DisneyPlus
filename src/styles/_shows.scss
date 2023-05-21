@@ -26,7 +26,7 @@
                 border-bottom: 3px solid transparent;
 
                 &:hover {
-                    border-bottom: 3px solid variaveis.$corTexto_secundario;
+                    border-bottom: 3px solid variaveis.$corTexto_principal;
                     cursor: pointer;
                 }
             }
@@ -219,15 +219,18 @@
     }
 }
 
+#secaoAbertura {
+    border-bottom: 3px solid variaveis.$corTexto_principal;
+}
 
-.shows__sugestoes--is--active {
+#shows__secao--is--active {
     display: block;
 }
 
-.shows__extras--is--active {
+#shows__extras--is--active {
     display: none;
 }
 
-.shows__detalhes--is--active {
+#shows__detalhes--is--active {
     display: none;
 }

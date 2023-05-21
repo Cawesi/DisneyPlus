@@ -218,13 +218,13 @@
             <section class="shows">
                 <nav class="shows__box">
                     <ul class="shows__box__list">
-                        <li class="texto--descritivo--medio shows__responsivo">SUGESTÕES</li>
-                        <li class="texto--descritivo--medio">EXTRAS</li>
-                        <li class="texto--descritivo--medio">DETALHES</li>
+                        <li data-tab-button="sugestoes" class="texto--descritivo--medio shows__responsivo btnsecoes" id="secaoAbertura">SUGESTÕES</li>
+                        <li data-tab-button="extras" class="texto--descritivo--medio btnsecoes">EXTRAS</li>
+                        <li data-tab-button="detalhes" class="texto--descritivo--medio btnsecoes">DETALHES</li>
                     </ul>
                 </nav>
     
-                <div class="shows__sugestoes shows__sugestoes--is--active">
+                <div data-tab-id="sugestoes" class="shows__sugestoes btncontainersecao" id="shows__sugestoes--is--active">
                     <ul class="shows__sugestoes__list">
                         <li>
                             <a href="#">
@@ -258,7 +258,7 @@
                     </ul>
                 </div>
 
-                <div class="shows__extras shows__extras--is--active">
+                <div data-tab-id="extras" class="shows__extras btncontainersecao" id="shows__extras--is--active">
                     <ul class="shows__extras__list">
                         <li>
                             <div class="extras__image">
@@ -357,7 +357,7 @@
                     </ul>
                 </div>
 
-                <div class="shows__detalhes shows__detalhes--is--active">
+                <div data-tab-id="detalhes" class="shows__detalhes btncontainersecao" id="shows__detalhes--is--active">
                     <h3 class="shows__detalhes__titulo texto--detalhes--titulo">
                         Avatar - O caminho da água
                     </h3>
@@ -453,8 +453,9 @@
                 </p>
             </div>
         </footer>
-
     </div>
+
+    <script src="./src/js/main.js"></script>
     
 </body>
 </html>
