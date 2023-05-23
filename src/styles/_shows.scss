@@ -58,6 +58,11 @@
                 &:hover {
                     padding: 0;
                     border: 3px solid variaveis.$corTexto_secundario;
+
+
+                    .imgsc {
+                        height: 100%;
+                    }
                 }
             }
         }
